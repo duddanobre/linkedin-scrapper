@@ -16,7 +16,7 @@ const buildSearchUrl = (keywords, location, start = 0) => {
     return `${baseUrl}?keywords=${encodedKeywords}&location=${encodedLocation}&start=${start}`;
 };
 
-const scrapeJobs = async (keywords, location, pages = 3) => {
+export const scrapeJobs = async (keywords, location, pages = 3) => {
     console.log(`🔍 Searching for jobs: "${keywords}" in "${location}"...`);
     let allJobs = [];
 
@@ -49,7 +49,7 @@ const scrapeJobs = async (keywords, location, pages = 3) => {
     return allJobs;
 };
 
-const saveToJson = (data, keywords, location, outputDir) => {
+export const saveToJson = (data, keywords, location, outputDir) => {
     const filename = `${keywords}-${location}.json`
         .toLowerCase()
         .replace(/[^\w\s-]/g, "")
