@@ -1,0 +1,19 @@
+{
+  "name": "linkedin-vagas-scraper",
+  "version": "1.0.0",
+  "description": "Buscador de vagas no linkedin usando puppeteer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "puppeteer": "^22.1.1"
+  },
+  "author": "Maria Eduarda Nobre",
+  "license": "ISC"
+}
